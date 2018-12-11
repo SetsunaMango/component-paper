@@ -1,0 +1,61 @@
+.pager{
+    width: 440px;
+    margin: auto;
+    height: 30px;
+    font-size: 0;
+    ul{
+        font-size: 0;
+        display: inline-block;
+        vertical-align: top;
+        li{
+            display: inline-block;
+            vertical-align: top;
+            user-select: none;
+            cursor: pointer;
+            width: 34px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            overflow: hidden;
+            border-radius: 4px;
+            font-family: "PingFangSC-Regular","Microsoft YaHei" ,"sans-serif ";
+            font-size: 14px;
+            color: #666666;
+            letter-spacing: 0;
+            &:not(.pager-h){
+                &:hover{
+                    color: #fff;
+                    background: #327BC8;
+                }
+            }
+            &.current{
+                color: #fff;
+                background: #327BC8;
+            }
+        }
+    }
+    span{
+        display: inline-block;
+        vertical-align: top;
+        font-family: "PingFangSC-Regular","Microsoft YaHei" ,"sans-serif ";
+        font-size: 14px;
+        color: #666666;
+        letter-spacing: 0;
+        width: 117px;
+        padding-left: 25px;
+        input{ //跳转输入框
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 32px;
+            height: 28px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #DDDDDD;
+            border-radius: 4px;
+            outline: none;
+            &:hover{
+                border: 1px solid #327BC8;
+            }
+        } 
+    }
+}
